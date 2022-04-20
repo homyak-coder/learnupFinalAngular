@@ -1,0 +1,26 @@
+.human-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.human-section-information {
+  display: flex;
+  margin-bottom: 15px;
+}
+.human-section-information__elem {
+  display: block;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.human-section-input {
+  margin-bottom: 15px;
+}
+.human-section-input__elem {
+  margin-bottom: 10px;
+}
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
