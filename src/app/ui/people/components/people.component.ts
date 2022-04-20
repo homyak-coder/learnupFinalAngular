@@ -16,7 +16,7 @@ export class PeopleComponent implements OnInit {
 
 
   public human: Human = {
-    FIO: 'Холодов Даниил Александрович',
+    FIO: 'Фамилия Имя Отчество',
     address: 'город N'
   }
 
