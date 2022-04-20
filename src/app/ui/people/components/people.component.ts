@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {Human} from "../../../human";
-import {HUMANS} from "../../../mock-human";
 import {DadataConfig,  DadataType} from '@kolkov/ngx-dadata';
 
 @Component({
@@ -18,11 +17,8 @@ export class PeopleComponent implements OnInit {
 
   public human: Human = {
     FIO: 'Холодов Даниил Александрович',
-    address: 'город Чапаевск Самарская область'
+    address: 'город N'
   }
-
-  public humans = HUMANS;
-
 
 
   configAddress: DadataConfig = {
