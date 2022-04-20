@@ -1,23 +1,18 @@
 <section class="human-section">
 <div class="human-section-information">
-  <span class="human-section-information__elem">Фамилия пользователя: </span>{{human.surname}}
-  <span class="human-section-information__elem">Имя пользователя: </span>{{human.name}}
-  <span class="human-section-information__elem">Отчество пользователя: </span>{{human.patronymic}}
+  <span class="human-section-information__elem">ФИО: {{human.FIO}}</span>
+  <span class="human-section-information__elem">Адрес пользователя: {{human.address}}</span>
 </div>
 
 <div class="human-section-input">
 <div class="human-section-input__elem">
-  <label class="label" for="surname">Фамилия</label>
-  <input id="surname" name="surname" type="text" class="input" [(ngModel)]="human.surname" placeholder="Фамилия">
+  <label class="label" for="address" >Введите Ваш адрес: </label>
+  <ngx-dadata [config]="configAddress" id="address" [(ngModel)]="human.address" ></ngx-dadata>
 </div>
-<div class="human-section-input__elem">
-  <label class="label label-name" for="name">Имя</label>
-  <input id="name" name="name" type="text" class="input" [(ngModel)]="human.name" placeholder="Имя">
-</div>
-<div class="human-section-input__elem">
-  <label class="label" for="patronymic">Отчество</label>
-  <input id="patronymic" name="patronymic" type="text" class="input" [(ngModel)]="human.patronymic" placeholder="Отчество">
-</div>
+  <div class="human-section-input__elem">
+    <label for="fio">Введите ФИО: </label>
+    <ngx-dadata [config]="configFio" id="fio" [(ngModel)]="human.FIO" ></ngx-dadata>
+  </div>
 </div>
 </section>
 

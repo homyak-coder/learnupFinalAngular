@@ -1,6 +1,4 @@
 export interface Human {
-  surname: string;
-  name: string;
-  patronymic: string
-
+  FIO: string;
+  address: string;
 }

@@ -4,7 +4,7 @@ export const HUMANS: Human[] = []
 
 
 for (let i = 0; i < 100; i++) {
-  HUMANS.push({surname: 'Холодов', name: 'Даниил', patronymic: 'Алекандрович'})
+  HUMANS.push({ FIO: '', address: ''})
 }
 
 console.log(HUMANS)

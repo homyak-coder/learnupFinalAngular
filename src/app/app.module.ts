@@ -4,6 +4,8 @@ import { AppComponent } from './app.component';
 import { PeopleComponent } from './ui/people/components/people.component';
 import {FormsModule} from "@angular/forms";
 import {ScrollingModule} from "@angular/cdk/scrolling";
+import {HttpClientModule} from "@angular/common/http";
+import { NgxDadataModule} from "@kolkov/ngx-dadata";
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import {ScrollingModule} from "@angular/cdk/scrolling";
   imports: [
     BrowserModule,
     FormsModule,
-    ScrollingModule
+    ScrollingModule,
+    HttpClientModule,
+    NgxDadataModule
   ],
   providers: [],
   bootstrap: [AppComponent]

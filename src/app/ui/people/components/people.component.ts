@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Human} from "../../../human";
 import {HUMANS} from "../../../mock-human";
+import {DadataConfig,  DadataType} from '@kolkov/ngx-dadata';
 
 @Component({
   selector: 'app-people',
@@ -16,21 +17,26 @@ export class PeopleComponent implements OnInit {
 
 
   public human: Human = {
-    name: 'Даниил',
-    surname: 'Холодов',
-    patronymic: 'Александрович'
-
+    FIO: 'Холодов Даниил Александрович',
+    address: 'город Чапаевск Самарская область'
   }
 
   public humans = HUMANS;
 
 
 
-  public selectedHuman?: Human
-
-  public onSelectHuman(human: Human): void {
-    this.selectedHuman = human;
-  }
-
+  configAddress: DadataConfig = {
+    apiKey: '2e51c5fbc1a60bd48face95951108560bf03f7d9',
+    type: DadataType.address,
+    locations: [
+      {
+        city: 'Москва',
+      }
+    ]
+  };
+  configFio: DadataConfig = {
+    apiKey: '2e51c5fbc1a60bd48face95951108560bf03f7d9',
+    type: DadataType.fio,
+  };
 
 }
